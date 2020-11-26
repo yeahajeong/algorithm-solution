@@ -94,7 +94,7 @@ def index_of_greater_equal_than_x(a, x):
 
 
 
-#### [가사검색](#https://programmers.co.kr/learn/courses/30/lessons/60060) `프로그래머스` `Kakao` 
+#### [가사검색](https://programmers.co.kr/learn/courses/30/lessons/60060) `프로그래머스` `Kakao` 
 
 - 이진탐색, 트라이 자료구조
 - 난이도 상(Hard)
