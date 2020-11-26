@@ -43,7 +43,9 @@ def count_by_range(a, left_value, right_value):
     right_index = bisect_right(a, right_value)
     left_index = bisect_left(a, left_value)
     return right_index - left_index
+```
 
+```python
 # 정확히 값이 x인 데이터의 인덱스 반환
 def index_of_x(a, x):
     i = bisect_left(a, x)
@@ -96,7 +98,7 @@ def index_of_greater_equal_than_x(a, x):
 
 - 이진탐색, 트라이 자료구조
 - 난이도 상(Hard)
-- [풀이](#solution/가사검색.py)
+- [풀이](/solution/가사검색.py)
 
 
 
