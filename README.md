@@ -263,4 +263,4 @@ Counter(list) # list의 똑같은 엘리먼트가 몇 개 있는지 딕셔너리
 #### @ [단어변환](https://programmers.co.kr/learn/courses/30/lessons/43163#qna) `프로그래머스`
 
 - BFS
-- [풀이](
+- [풀이](/solution/단어변환.py)
