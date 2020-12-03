@@ -204,6 +204,27 @@ Counter(list) # list의 똑같은 엘리먼트가 몇 개 있는지 딕셔너리
 > - DFS 깊이 우선 탐색 -> Stack 사용, 재귀호출을 많이 사용 (선입후출)
 > - 파이썬 같은 경우 재귀 호출이 상당히 느리기 때문에 가급적 BFS를 사용하는 것이 좋다
 
+
+#### 💡 파이썬 라이브러리
+
+##### deque
+
+- deque(double-ended queue) : 양방향에서 데이터를 처리할 수 있는 queue
+
+```python
+from collections import deque
+```
+
+> ##### [ 지원하는 메소드 ]
+
+> - append(x) : deque의 우측에 x 추가
+> - appendleft(x) : deque의 좌측에 x 추가
+> - insert(i, x) : deque의 i번째 위치에 x 추가
+> - clear : deque의 모든 요소 삭제
+> - pop() : deque의 우측에서 값 하나 추출
+> - popleft() : deque의 좌측에서 값 하나 추출
+> - remove(value) : deque에서 처음 나타나는 value 삭제
+
 ---
 
 
