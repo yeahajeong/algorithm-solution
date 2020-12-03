@@ -216,7 +216,6 @@ from collections import deque
 ```
 
 > ##### [ 지원하는 메소드 ]
-
 > - append(x) : deque의 우측에 x 추가
 > - appendleft(x) : deque의 좌측에 x 추가
 > - insert(i, x) : deque의 i번째 위치에 x 추가
