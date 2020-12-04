@@ -1,5 +1,4 @@
 # 풀이 방법이 대표적으로 세가지가 있다.
-
 # 1. 단순 반복으로 푼 풀이 - 효율성에 통과하지 못하는 코드
 def solution1(participant, completion):
     for i in completion: # 완주한 선수의 루프를 돈다. O(n)
@@ -46,4 +45,5 @@ completion = ["eden", "kiki"]
 participant2 = ["mislav", "stanko", "mislav", "ana"]
 completion2 = ["stanko", "ana", "mislav"]
 
-print(solution3(participant,completion))
+
+print(solution3(participant, completion))
