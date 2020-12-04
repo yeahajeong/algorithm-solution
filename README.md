@@ -200,6 +200,7 @@ Counter(list) # list의 똑같은 엘리먼트가 몇 개 있는지 딕셔너리
 ### BFS 너비우선탐색 & DFS 깊이우선탐색
 
 > - 지도가 있고 옆으로 퍼져나가며 탐색을 진행해야한다? BFS & DFS
+> - 완전 탐색이 필요할 경우 DFS 사용
 > - BFS 너비 우선 탐색 -> Queue 사용 (선입선출)
 > - DFS 깊이 우선 탐색 -> Stack 사용, 재귀호출을 많이 사용 (선입후출)
 > - 파이썬 같은 경우 재귀 호출이 상당히 느리기 때문에 가급적 BFS를 사용하는 것이 좋다
@@ -284,3 +285,11 @@ from collections import deque
 
 - BFS
 - [풀이](/solution/단어변환.py)
+
+
+
+#### @[여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) `프로그래머스`
+
+- DFS
+- [풀이]()(/solution/여행경로.py)
+  - 테스트 1, 2 런타임 에러
