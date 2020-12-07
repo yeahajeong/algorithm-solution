@@ -217,6 +217,7 @@ from collections import deque
 ```
 
 > ##### [ 지원하는 메소드 ]
+>
 > - append(x) : deque의 우측에 x 추가
 > - appendleft(x) : deque의 좌측에 x 추가
 > - insert(i, x) : deque의 i번째 위치에 x 추가
@@ -293,3 +294,19 @@ from collections import deque
 - DFS
 - [풀이]()(/solution/여행경로.py)
   - 테스트 1, 2 런타임 에러
+
+
+
+#### @[카펫](https://programmers.co.kr/learn/courses/30/lessons/42842) `프로그래머스`
+
+- 완전탐색
+- [풀이](/solution/카펫.py)
+  - 다시 풀어본 문제인데 그때랑 풀이방법이 달라졌다.
+
+
+
+#### @[베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) `프로그래머스`
+
+- 해시
+- [풀이](/solution/베스트앨범.py)
+  - 방법을 생각해내는게 어렵다. 흑흑
