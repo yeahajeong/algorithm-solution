@@ -12,13 +12,13 @@ def solution(progresses, speeds):
     for work in works:
         if len(working) == 0:
             working = [work]
-            com = work
-        elif com >= work:
+            comm = work
+        elif comm >= work:
             working.append(work)
         else:
             answer.append(len(working))
             working = [work]
-            com = work
+            comm = work
     answer.append(len(working))
     return answer
 
@@ -42,6 +42,20 @@ def another_solution(progresses, speeds):
     return answer
 
 
+# 다른 사람이 푼 코드
+def another_solution2(progresses, speeds):
+    Q = []
+    for p, s in zip(progresses, speeds):
+        print(Q)
+        if len(Q) == 0 or Q[-1][0] < -((p-100)//s):
+            Q.append([-((p-100)//s), 1])
+        else:
+            Q[-1][1] += 1
+        print(Q)
+        print("")
+    return [q[1] for q in Q]
+
+
 progresses = [93, 30, 55]
 speeds = [1, 30, 5]
-print(another_solution(progresses, speeds))
+print(another_solution2(progresses, speeds))
