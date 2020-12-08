@@ -1,3 +1,6 @@
+# 스택 문제
+# 테스트 케이스에 이상한게 있었어ㅠㅠ 그래서 그것 때문에 시간을 좀 버림
+
 def solution(prices):
     answer = []
     for index, price in enumerate(prices):
