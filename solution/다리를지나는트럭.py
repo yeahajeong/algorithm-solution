@@ -3,25 +3,26 @@ from collections import deque
 
 def solution(bridge_length, weight, truck_weights):
     # 대기 중인 트럭들 뒤집어 주기
-    # pop(0)하면 효율적이지 않기 때문
+    # pop(0)하면 한칸씩 땡겨줘야해서 효율적이지 않다
     truck_weights = truck_weights[::-1]
 
     # 각 트럭이 다리에 오른 후 시간이 얼마나 흘렸는지 나타내기 위한 리스트
     passing = deque([0] * bridge_length)
     time = 0
-    print(passing)
+    curr_weight = 0
 
     while passing:
         time += 1
-        passing.popleft()
-        print("현재시간 : {}".format(time))
+        end = passing.popleft()
+        curr_weight -= end
 
         if truck_weights:
-            if sum(passing) + truck_weights[-1] <= weight:
-                passing.append(truck_weights.pop())
+            if curr_weight + truck_weights[-1] <= weight:
+                truck = truck_weights.pop()
+                passing.append(truck)
+                curr_weight += truck
             else:
                 passing.append(0)
-        print(passing)
     return time
 
 
