@@ -309,7 +309,7 @@ import heapq
       return kth_min
   ```
 
-- **[응용] 힙 정렬 알고리즘 **
+- **[응용] 힙 정렬 알고리즘**
 
   ```python
   import heapq
