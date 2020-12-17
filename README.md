@@ -584,14 +584,14 @@ def index_of_greater_equal_than_x(a, x):
 
 - 이진탐색, 트라이 자료구조
 - 난이도 상(Hard)
-- [풀이](/solution/가사검색.py)
+- [풀이](/programers/가사검색/solution.py)
 
 
 
 #### 2. [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576) `프로그래머스`
 
 - 정렬, Counter, 해쉬
-- [풀이](/solution/완주하지못한선수.py)
+- [풀이](/programers/완주하지%20못한%20선수/완주하지못한선수.py)
   - 단순 반복으로 풀면 시간 복잡도가 O(n^2)이라 실패함
   - 파이썬 라이브러리를 적극 활용하자!
 
@@ -600,14 +600,14 @@ def index_of_greater_equal_than_x(a, x):
 #### 3. [나머지한점]() `프로그래머스`
 
 - Counter
-- [풀이](/solution/나머지한점.py)
+- [풀이](/programers/나머지한점/나머지한점.py)
 
 
 
 #### 4. [기능개발]() `프로그래머스`
 
 - queue
-- [풀이](/solution/기능개발.py)
+- [풀이](/programers/기능개발/기능개발.py)
   - 명확한 의미의 변수명을 사용하자
   - //로 ceil과 같은 효과를 낼 수 있다
 
@@ -616,7 +616,7 @@ def index_of_greater_equal_than_x(a, x):
 #### 5. [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061) `프로그래머스` `Kakao`
 
 - Stack
-- [풀이](/solution/크레인인형뽑기게임.py)
+- [풀이](/programers/크레인%20인형뽑기%20게임/크레인인형뽑기게임.py)
   - 확인을 for문 안쪽으로 뒀더니 해결되었다
 
 
@@ -633,7 +633,7 @@ def index_of_greater_equal_than_x(a, x):
 #### 7. [단어변환](https://programmers.co.kr/learn/courses/30/lessons/43163#qna) `프로그래머스`
 
 - BFS
-- [풀이](/solution/단어변환.py)
+- [풀이](/programers/단어변환/단어변환.py)
 
 
 
@@ -648,7 +648,7 @@ def index_of_greater_equal_than_x(a, x):
 #### 9. [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842) `프로그래머스`
 
 - 완전탐색
-- [풀이](/solution/카펫.py)
+- [풀이](/programers/카펫/카펫.py)
   - 다시 풀어본 문제인데 그때랑 다르게 풀었네..
 
 
@@ -656,7 +656,7 @@ def index_of_greater_equal_than_x(a, x):
 #### 10. [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) `프로그래머스` 🤢
 
 - 해시
-- [풀이](/solution/베스트앨범.py)
+- [풀이](/programers/베스트%20앨범/베스트앨범.py)
   - 방법을 생각해내는게 어렵다. 흑흑
   - 딕셔너리(해시) 사용법에 대해 익숙하지 않아서 반복해서 풀고 기억하자
 
@@ -665,23 +665,23 @@ def index_of_greater_equal_than_x(a, x):
 #### 11. [다리를 지나는 트럭 ](https://programmers.co.kr/learn/courses/30/lessons/42583) `프로그래머스` 🤢
 
 - 큐
-- [풀이](/solution/다리를지나는트럭.py)
+- [풀이](/programers/다리를지나는트럭.py)
   - 해결하지 못함. 해결방법을 떠올릴 수 없음
-- [다른사람풀이](/solution/다리를지나는트럭(다른사람풀이).py)
+- [다른사람풀이](/programers/다리를지나는트럭(다른사람풀이).py)
 
 
 
 #### 12. [디스크 컨트롤러](https://programmers.co.kr/learn/courses/30/lessons/42627) `프로그래머스`🤬
 
 - 힙(Heap)
-- [풀이](/solution/디스크컨트롤러.py)
+- [풀이](/programers/디스크%20컨트롤러/디스크컨트롤러.py)
 
 
 
 #### 13. [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) `프로그래머스`
 
 - 스택
-- [풀이](/solution/주식가격.py)
+- [풀이](/programers/주식가격/주식가격.py)
   - 테스트케이스를 잘못잡아서 더 오래걸렸다.
 
 
@@ -689,4 +689,4 @@ def index_of_greater_equal_than_x(a, x):
 #### 14. [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) `프로그래머스 `🤬
 
 - 스택 / 큐
-- [풀이](/solution/프린터.py)
+- [풀이](/programers/프린터/프린터.py)

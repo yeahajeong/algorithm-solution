@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from math import ceil
 # 전체적으로 보자면 Queue의 형태를 사용해여 해결 가능
 # 조건이 맞으면 맨 앞의 값부터 빠져나오기 때문에 FIFO의 형태를 가진다
@@ -55,7 +54,7 @@ def solution3(progresses, speeds):
         answer[-1][1] += 1
 
     return [i[1] for i in answer]
-=======
+
 # 스택 / 큐
 import math
 
@@ -117,4 +116,3 @@ def another_solution2(progresses, speeds):
 progresses = [93, 30, 55]
 speeds = [1, 30, 5]
 print(another_solution2(progresses, speeds))
->>>>>>> origin/main
