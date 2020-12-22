@@ -1,5 +1,3 @@
-
-
 # algorithm-solution
 
 🌱 코딩테스트 풀이 저장소
@@ -36,51 +34,51 @@
 
 ## ✔ 문자열 처리
 
-#### 🔍 문자열 길이
+#### ✏ 문자열 길이
 
 ```python
 len(문자열)
 ```
 
-#### 🔍 특정문자 개수 찾기
+#### ✏ 특정문자 개수 찾기
 
 ```python
 s.count('찾을 문자')
 ```
 
-#### 🔍 문자 인덱스 반환
+#### ✏ 문자 인덱스 반환
 
 ```python
 s.find('찾을 문자')		# 존재하지 않는다면 -1 반환
 s.index('찾을 문자')	# 존재하지 않는다면 오류 발생
 ```
 
-#### 🔍 문자열 사이에 문자 삽입하기 - join
+#### ✏ 문자열 사이에 문자 삽입하기 - join
 
 ```python
 "삽입할 문자".join('문자열')
 ```
 
-#### 🔍 소 ↔ 대 문자 변경
+#### ✏ 소 ↔ 대 문자 변경
 
 ```python
 s.upper()	# 소 -> 대
 s.lower() 	# 대 -> 소
 ```
 
-#### 🔍 글자 치환
+#### ✏ 글자 치환
 
 ```python
 s.replace('대체문자(열)', '기존문자(열)')
 ```
 
-#### 🔍 기준으로 글자 쪼개기
+#### ✏ 기준으로 글자 쪼개기
 
 ```python
 s.split(기준)
 ```
 
-#### 🔍 문자열 개수 단위로 쪼개기
+#### ✏ 문자열 개수 단위로 쪼개기
 
 ```python
 splited = [s[i:i+size] for i in range(0, LENGTH, size)]
@@ -91,19 +89,19 @@ splited = [s[i:i+size] for i in range(0, LENGTH, size)]
 
 ## ✔ 2차 리스트
 
-#### 🔍 초기화 m * n 행렬
+#### ✏ 초기화 m * n 행렬
 
 ```python
 board = [[0] * n for i in range(m)]
 ```
 
-#### 🔍 행열 뒤집기 (n*m)
+#### ✏ 행열 뒤집기 (n*m)
 
 ```python
 reversed = list(map(list,zip(*board)))
 ```
 
-#### 🔍 90도 회전
+#### ✏ 90도 회전
 
 ```python
 def rotate90(arr):
@@ -125,26 +123,26 @@ def rotate90(arr):
 - `key` 값에는 변하지 않는 값만 가능 (리스트 불가, 튜플 가능)
 - key 값으로 무엇을 찾아야할 때, 시간을 줄여야 하는 상황에서 많이 사용
 
-#### 🔍 빈 딕셔너리 생성
+#### ✏ 빈 딕셔너리 생성
 
 ```python
 d = {}
 d = dic()
 ```
 
-#### 🔍 요소가 있는 딕셔너리 생성
+#### ✏ 요소가 있는 딕셔너리 생성
 
 ```python
 d = {key:value ...}
 ```
 
-#### 🔍 요소 추가
+#### ✏ 요소 추가
 
 ```python
 d[key] = value
 ```
 
-#### 🔍 요소 삭제
+#### ✏ 요소 삭제
 
 ```python
 del d[key]
@@ -152,7 +150,7 @@ d.pop(key, default)		# 해당 값이 없으면 디폴트 값 리턴
 d.clear()				# 모두 삭제
 ```
 
-#### 🔍 get
+#### ✏ get
 
 ```python
 d[key]					# 해당 값이 없으면 오류발생
@@ -160,25 +158,25 @@ d.get(key)  			# 해당 값이 없으면 None
 d.get(key, default)  	# 해당 값이 없으면 미리정해둔 디폴트값을 대신 가져옴
 ```
 
-#### 🔍 key 값만 얻기
+#### ✏ key 값만 얻기
 
 ```python
 d.keys()	# 객체로 반환
 ```
 
-#### 🔍 value 값만 얻기
+#### ✏ value 값만 얻기
 
 ```python
 d.values()	# 객체로 반환
 ```
 
-#### 🔍 딕셔너리 모든 값 얻기
+#### ✏ 딕셔너리 모든 값 얻기
 
 ```python
 d.items()	# 튜플로 묶어 객체로 반환
 ```
 
-#### 🔍 존재 확인 -> True, False 반환
+#### ✏ 존재 확인 -> True, False 반환
 
 ```python
 key in a
@@ -200,32 +198,32 @@ import heapq
 - 파이썬의 힙은 최소힙을 제공
 - 시간복잡도 - O(log N)
 
-#### 🔍 원소 추가 - O(log N)
+#### ✏ 원소 추가 - O(log N)
 
 ```python
 list = []
 heapq.heappush(list, value)
 ```
 
-#### 🔍 원소가 있는 list를 heap으로 변환 - O(N)
+#### ✏ 원소가 있는 list를 heap으로 변환 - O(N)
 
 ```python
 heapq.heapify(list)
 ```
 
-#### 🔍 가장 작은 원소 반환 -> 그 다음 작은 원소가 루트로 올라옴 - O(log N)
+#### ✏ 가장 작은 원소 반환 -> 그 다음 작은 원소가 루트로 올라옴 - O(log N)
 
 ```python
 heapq.heappop(list)
 ```
 
-#### 🔍 원소를 삭제하지 않고 최소값 반환
+#### ✏ 원소를 삭제하지 않고 최소값 반환
 
 ```python
 list[0]
 ```
 
-#### 🔍 [응용] 최대힙
+#### ✏ [응용] 최대힙
 
 힙에 튜플을 원소로 추가하거나 삭제하면 튜플 내에서 맨 앞에 있는 값을 기준으로 최소 힙이 구성되는 원리를 이용, 각 값에 대한 우선 순위를 구한 후, (우선순위, 값) 구조의 튜플을 힙에 추가하거나 삭제
 
@@ -241,7 +239,7 @@ while heap:
   print(heapq.heappop(heap)[1])  # index 1
 ```
 
-#### 🔍 [응용] K번째 최소값 / 최대값
+#### ✏ [응용] K번째 최소값 / 최대값
 
 ```python
 import heapq
@@ -258,7 +256,7 @@ def kth_smallest(nums, k):
     return kth_min
 ```
 
-#### 🔍 [응용] 힙 정렬 알고리즘
+#### ✏ [응용] 힙 정렬 알고리즘
 
 ```python
 import heapq
@@ -322,13 +320,13 @@ def binary_search(data, start, end, target):
 import math
 ```
 
-#### 🔍 ceil - 올림
+#### ✏ ceil - 올림
 
 ```python
 math.ceil(num / div)
 ```
 
-#### 🔍 factorial
+#### ✏ factorial
 
 ```python
 math.factorial(3)
@@ -340,39 +338,59 @@ math.factorial(3)
 
 ```python
 import itertools
+# n의 개수가 늘어나면 효율성이 떨어지기 때문에 순열과 조합을 사용하는 문제에서는 n의 수가 10내외로 정해진 경우가 다수
 ```
 
-#### 🔍 permutations - 순열
+#### ✏ permutations - 순열
+
+- 순열 : 서로 다른 n 개에서 서로 다른 r개를 선택해 일렬로 나열하는 것
+- nPr = n * (n-1) * (n-2) * ... * (n - r + 1)
 
 ```python
 from itertools import permutations
 
-permutations(range(1, 10), 3)
-permutations(lst)
+data = ['A', 'B', 'C'] # 데이터 준비
+# 모든 순열 구하기
+result = list(permutations(data, 3)) # 'ABC', 'ACB', 'BCA', 'CAB', 'CBA'
 ```
 
-#### 🔍 combinations - 조합
+#### ✏ combinations - 조합
+
+- 조합 : 서로 다른 n개에서 순서와 상관없이 서로 다른 r개를 선택하는 것
+- nCr = { n * (n-1) * (n-2) * ... * (n - r + 1)  } / r!
 
 ```python
 from itertools import combinations
 
-combinations('ABC', 2)
+data = ['A', 'B', 'C'] # 데이터 준비
+result = list(combinations(data, 3)) # 'AB', 'AC', 'BC'
 ```
 
-#### 🔍 product - 중복 순열
+#### ✏ product - 중복 순열
 
 ```python
 from itertools import product
 
-product(range(1,n1+1), range(1,n2+1), range(1,n3+1))
+data = ['A', 'B', 'C'] # 데이터 준비
+result = list(product(data, repeat=2)) # 2개를 뽑는 모든 순열 구하기 (중복허용)
 
-or_not = [(0, 500), (0, 1500)]
-list(product(*or_not))
-
-#[(0,0), (0,1500), (500,0), (500,1500)]
+# 실행 결과 -> n^r개
+# [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'B'), ('B', 'C'), ('C', 'A'), ('C', 'B'), ('C', 'C')]
 ```
 
-#### 🔍 chain - flatten(2차 리스트 -> 1차 리스트)
+#### ✏ combinations_with_replacement - 중복 조합
+
+```python
+from itertools import combinations_with_replacement
+
+data = ['A', 'B', 'C'] # 데이터 준비
+result = list(combinations_with_replacement(data, 2)) # 2개를 뽑는 모든 조합 구하기 (중복허용)
+
+# 실행 결과
+# [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
+```
+
+#### ✏ chain - flatten(2차 리스트 -> 1차 리스트)
 
 ```python
 from itertools import chain
@@ -420,7 +438,7 @@ from collections import deque
 
 - 양방향에서 데이터를 처리할 수 있는 queue
 
-#### 🔍 요소 추가
+#### ✏ 요소 추가
 
 ```python
 dq.append(x)		# 우측에 x 추가
@@ -428,7 +446,7 @@ dq.appendleft(x)	# 좌측에 x 추가
 dq.insert(i, x)		# i번째 위치에 x 추가
 ```
 
-#### 🔍 요소 삭제
+#### ✏ 요소 삭제
 
 ```python
 dq.pop()		# 우측에서 값 하나 추출
@@ -437,7 +455,7 @@ dq.clear()		# deque의 모든 요소 삭제
 dq.remove(x)	# 처음 나타나는 x값 삭제
 ```
 
-#### 🔍 요소 조회
+#### ✏ 요소 조회
 
 ```python
 dq[0]
@@ -451,19 +469,19 @@ dq[0]
 from bisect import bisect_left, bisect_right
 ```
 
-#### 🔍 정렬된 순서를 유지하면서 리스트에 x를 삽입할 가장 왼쪽 위치 반환
+#### ✏ 정렬된 순서를 유지하면서 리스트에 x를 삽입할 가장 왼쪽 위치 반환
 
 ```python
 bisect_left(list, x)
 ```
 
-#### 🔍 정렬된 순서를 유지하면서 리스트에 x를 삽입할 가장 오른쪽 위치 반환
+#### ✏ 정렬된 순서를 유지하면서 리스트에 x를 삽입할 가장 오른쪽 위치 반환
 
 ```python
 bisect_right(list, x)
 ```
 
-#### 🔍 값이 [left_value, right_value]인 데이터의 개수를 반환하는 함수
+#### ✏ 값이 [left_value, right_value]인 데이터의 개수를 반환하는 함수
 
 ```python
 def count_by_range(a, left_value, right_value):
@@ -472,7 +490,7 @@ def count_by_range(a, left_value, right_value):
     return right_index - left_index
 ```
 
-#### 🔍 값이 정확이 x인 데이터의 인덱스 반환
+#### ✏ 값이 정확이 x인 데이터의 인덱스 반환
 
 ```python
 def index_of_x(a, x):
@@ -482,7 +500,7 @@ def index_of_x(a, x):
     return None
 ```
 
-#### 🔍 x보다 작은 데이터 중에서, 가장 큰 값의 인덱스를 반환
+#### ✏ x보다 작은 데이터 중에서, 가장 큰 값의 인덱스를 반환
 
 ```python
 def index_of_less_than_x(a, x):
@@ -494,7 +512,7 @@ def index_of_less_than_x(a, x):
     return None
 ```
 
-#### 🔍 x보다 작거나 같은 데이터 중에서, 가장 큰 값의 인덱스를 반환
+#### ✏ x보다 작거나 같은 데이터 중에서, 가장 큰 값의 인덱스를 반환
 
 ```python
 def index_of_less_or_equal_than_x(a, x):
@@ -506,7 +524,7 @@ def index_of_less_or_equal_than_x(a, x):
     return None
 ```
 
-#### 🔍 x보다 큰 데이터 중에서, 가장 작은 값의 인덱스를 반환
+#### ✏ x보다 큰 데이터 중에서, 가장 작은 값의 인덱스를 반환
 
 ```python
 def index_of_greater_than_x(a, x):
@@ -518,7 +536,7 @@ def index_of_greater_than_x(a, x):
     return None
 ```
 
-#### 🔍 x보다 크거나 같은 데이터 중에서, 가장 작은 값의 인덱스를 반환
+#### ✏ x보다 크거나 같은 데이터 중에서, 가장 작은 값의 인덱스를 반환
 
 ```python
 def index_of_greater_equal_than_x(a, x):
@@ -690,3 +708,14 @@ def index_of_greater_equal_than_x(a, x):
 
 - 스택 / 큐
 - [풀이](/programers/프린터/프린터.py)
+
+
+
+#### 15. [외벽점검](https://programmers.co.kr/learn/courses/30/lessons/60062) `프로그래머스` `kakao`
+
+- 완전 탐색 - 순열과 조합
+- [풀이]()
+  - 문제 푸는거 실패
+  - 해답을 봐도 이해하는데 꽤 오래걸렸다ㅠㅠ 자괴감...
+  - ❓ 그냥 len(weak)를 사용할 때는 indexError가 발생한다 왜지?
+
